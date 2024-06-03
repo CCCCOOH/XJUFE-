@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="target.css">
+  <title>测试样式</title>
+</head>
+<body>
+  <h1>出票成功！</h1>
+  <div class="ticket">
+    <div class="title">
+      <span class="title-left-box">
+        <div class="title-left-1-box"><p class="red-font-p">W045520</p></div>
+        <div class="title-left-2-box" id="nowTime">当前时间</div>
+      </span>
+      <span class="title-right-box">
+        <div class="title-right-1-box">新疆财经大学售</div>
+        <div class="title-right-2-box" id="stuYear">入学年份</div>
+        <div class="title-right-3-box">特等座</div>
+      </span>
+    </div>
+    <div class="mid">
+      <span class="mid-left-box">新财站</span>
+      <span class="mid-center-box">G0301次</span>
+      <span class="mid-right-box">未来·梦想</span>
+    </div>
+    <div class="tile">
+      <div class="tile-up" id="stuName">￥ stuName</div>
+      <div class="tile-down">为梦想而奋斗 为理想而坚定</div>
+    </div>
+    
+    <div class="bottom">
+      <span class="bottom-left">
+        <p>学号：</p>
+        <span id="stuId">stuId</span>
+      </span>
+     <span class="bottom-right">
+        <div id="stuColleague" class="bottom-right-colleague">stuColleague</div>
+        <div id="stuClass" class="bottom-right-class">stuClass</div>
+     </span>
+    </div>
+
+    <div class="black-bottom"></div>
+  </div>
+  <script>
+    var inputName = localStorage.getItem("inputName");
+    var inputMark = localStorage.getItem("inputMark");
+    var inputClass = localStorage.getItem("inputClass");
+    var inputColleague = localStorage.getItem("inputColleague");
+    
+    document.getElementById("stuName").textContent = inputName;
+    document.getElementById("stuId").textContent = inputMark;
+    // 获取当前时间
+    var nowDate = new Date();
+    var day = nowDate.getDate();
+    var month = nowDate.getMonth() + 1;
+    var year = nowDate.getFullYear();
+    document.getElementById("nowTime").textContent = year + "年" + month + "月" + day + "日开";
+    document.getElementById("stuYear").textContent = inputMark.slice(0, 4) + "年9月入学";
+    document.getElementById("stuColleague").textContent = inputColleague;
+    document.getElementById("stuClass").textContent = inputClass;
+  </script>
+</body>
+</html>

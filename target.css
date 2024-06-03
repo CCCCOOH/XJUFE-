@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  margin: 50% auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('bg.webp');
+}
+/* 车票 */
+.ticket {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #003580;
+  /* border-radius: 10px; */
+  width: 90%;
+  background-image: url('bg-img.jpg');
+}
+/* 标题 */
+.title {
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+  display: flex;
+}
+
+.title-left-box {
+  /* border: 1px solid #000; */
+}
+
+.title-left-1-box {
+
+}
+.title-left-2-box {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.title-right-box {
+  margin-top: 30px;
+  margin-right: 15px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* border: 1px solid #000; */
+}
+
+.title-right-1-box {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.title-right-2-box {
+  margin-bottom: 5px;
+}
+.title-right-3-box {
+  
+}
+
+/* 中间 */
+.mid {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: space-evenly;
+  /* border: 1px solid #000; */
+  display: flex;
+}
+.mid-left-box {
+  font-size: large;
+  /* border: 1px solid #000; */
+}
+.mid-center-box {
+  /* border: 1px solid #000; */
+}
+.mid-right-box {
+  font-size: large;
+  /* border: 1px solid #000; */
+}
+
+/* 尾部 */
+.tile {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.tile-up {
+
+}
+
+.tile-down {
+  font-size: 10px;
+  font-weight: bold;
+}
+/* 底部 */
+.bottom {
+  border-top: 1px solid #858585a9;
+  padding-left: 20px;
+  /* border: 1px solid #000; */
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+
+
+.bottom-right-colleague {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.bottom-right {
+  margin-right: 10px;
+}
+
+.bottom-right-class {
+  font-size: 1px;
+}
+
+.red-font-p {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgba(199, 0, 0, 0.84);
+}
+
+.black-bottom {
+  height: 15px;
+  margin-top: 5px;
+  background: #000;
+}

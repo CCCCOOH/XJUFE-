@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算机协会开发</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="dialog">
+    <div id="envelope">
+        <div id="message">
+          <h1 class="message-title" style="text-align: center;">请填写你的毕业信！</h1>
+          <form action="#" name="ticketForm" id="ticketForm">
+            <table class="ticketForm">
+              <!-- 姓名输入 -->
+              <ul class="">
+                <label for="inputName" class="user-label">姓名：</label>
+                <input type="text" name="name" id="inputName" class="">
+              </ul>
+              <!-- 学院输入 -->
+              <ul>
+                <label for="inputColleague">学院：</label>
+                <input type="text" name="colleague" id="inputColleague">
+              </ul>
+              <!-- 班级输入 -->
+              <ul>
+                <label for="inputClass">班级：</label>
+                <input type="text" name="class" id="inputClass">
+              </ul>
+              <!-- 学号输入 -->
+              <ul>
+                <label for="inputMark">学号：</label>
+                <input type="text" name="mark" id="inputMark">
+              </ul>
+            </table>
+          </form>
+          <button onclick="submit()">填写完毕，青春启航！</button>
+        </div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="close">
+            <!---关闭按钮 悬浮按钮 加阴影 字体图标-->
+        </div>
+    </div>
+  </div>
+
+  <!-- 输入表单 -->
+  <script>
+    // 修改表单
+    function submit() {
+      // 学生信息表单
+      var nameInput = document.getElementById("inputName");
+      var classInput = document.getElementById("inputClass");
+      var markInput = document.getElementById("inputMark");
+      var colleagueInput = document.getElementById("inputColleague");
+      // 存储数据
+      localStorage.setItem("inputName", nameInput.value);
+      localStorage.setItem("inputClass", classInput.value);
+      localStorage.setItem("inputMark", markInput.value);
+      localStorage.setItem("inputColleague", colleagueInput.value);
+      
+      // 网页跳转
+      window.location.replace("target.html")
+    }
+  </script>
+</body>
+</html>
